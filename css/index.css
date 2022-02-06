@@ -120,7 +120,8 @@ header {
 
 .carousel_item__next {
   transform: translateX(-100%);
-  transition: transform 0.5s ease-in-out;
+  transition: transform .5s ease-in-out;
+
 }
 
 /* fade effect */
@@ -135,7 +136,7 @@ header {
   opacity: 1;
 }
 
-.carousel_fade .carousel_item__active .carousel_item__next {
+.carousel_fade .carousel_item__active.carousel_item__next {
   opacity: 0;
 }
 
