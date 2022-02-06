@@ -120,7 +120,7 @@ header {
 
 .carousel_item__next {
   transform: translateX(-100%);
-  transition: transform .5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 
 }
 
