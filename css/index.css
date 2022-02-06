@@ -77,6 +77,10 @@ img {
   border-radius: 0.31rem;
 }
 
+header {
+  display: none;
+}
+
 /* humberger menu end here */
 
 #home-container {
@@ -84,94 +88,68 @@ img {
   height: 100vh;
   position: relative;
   background: var(--orange);
-  transform-style: preserve-3d;
-  perspective: 500px;
-  overflow-x: hidden;
 }
 
-#home-container h2 {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  line-height: 100vh;
-  font-size: 10vw;
-  color: var(--white);
-  font-weight: 700;
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-content .home-ul {
+  list-style: none;
+  cursor: pointer;
+}
+
+.home-content .home-ul li {
+  display: inline-block;
+  color: var(--white-smoke);
+  font-size: 2.5rem;
   letter-spacing: 0.313rem;
 }
 
-.banner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.banner .blocks {
-  position: relative;
-  display: block;
-  width: 5vw;
-  height: 5vh;
-  animation: animate 2s ease-in-out forwards;
-  animation-delay: 1s;
+.home-content .home-ul li {
+  animation: animate 2s linear;
+  animation-iteration-count: 1;
 }
 
 @keyframes animate {
   0% {
-    transform: translateZ(2000px);
-    background: url(/Images/Home/slider1.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transform: rotate(0deg) translateY(0px);
+    opacity: 1;
+    filter: blur(1px);
   }
 
   100% {
-    transform: translateZ(0px);
-    background: url(/Images/Home/slider1.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    border: 1px solid rgba(0, 0, 0, .1);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    filter: blur(10px);
   }
 }
 
-#home-container.active .banner .blocks {
-  animation: animateTwo 2s ease-in-out forwards;
-  background: url(/Images/Home/slider1.jpg);
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  border: 1px solid rgba(0, 0, 0, .1);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  animation-delay: 1s;
+.home-ul li:nth-child(1) {
+  animation-delay: 0s;
 }
 
-@keyframes animateTwo {
-  0% {
-    transform: translateZ(0px);
-    background: none;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  }
+.home-ul li:nth-child(2) {
+  animation-delay: .4s;
+}
 
-  100% {
-    transform: translateZ(2000px);
-    background: none;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    border: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
-  }
+.home-ul li:nth-child(3) {
+  animation-delay: .8s;
+}
+
+.home-ul li:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+.home-ul li:nth-child(5) {
+  animation-delay: 1.6s;
+}
+
+.home-ul li:nth-child(6) {
+  animation-delay: 1.9s;
 }
 
 /* service section start here */
