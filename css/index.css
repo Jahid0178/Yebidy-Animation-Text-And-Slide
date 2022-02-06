@@ -170,6 +170,7 @@ header {
 .carousel_btn_2:hover {
   background: var(--orange);
   color: var(--white);
+  transition: 0.2s;
 }
 
 /* / carousel */
