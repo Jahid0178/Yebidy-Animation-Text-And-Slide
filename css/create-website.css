@@ -1,0 +1,333 @@
+/* Raleway Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #333;
+  --dark-black: #000;
+  --orange: #FF6600;
+  --light-orange: #ff7a22;
+  --red: #DC3545;
+  --red-dark: #c82333;
+  --white: #fff;
+  --header-primary: 2rem;
+  --little-desc: 1.5rem;
+  --primary-font: 'Raleway',
+    sans-serif;
+  --light-green: #25d366;
+  --light-blue: #4267B2;
+  --light-sky: #55acee;
+  --light-gray: #7d7d7d;
+  --yellow: #ffbd00;
+  --tia-light-green: #95D03A;
+  --white-smoke: #f5f5f5;
+  --light-tomato: #DD4B39;
+  --navy-blue: #3B5998;
+  --ash: #6c757d;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+::selection {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.container {
+  width: 100%;
+  max-width: 78.12rem;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.underline::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 0.12rem;
+  background: var(--black);
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.logo {
+  width: 10rem;
+}
+
+/* humberger menu start here */
+
+.nav-menu {
+  display: none;
+}
+
+.nav-menu div {
+  width: 1.87rem;
+  height: 0.31rem;
+  background: #333;
+  margin: 0.31rem;
+  border-radius: 0.31rem;
+}
+
+/* humberger menu end here */
+
+.page-title {
+  padding: 3rem 0;
+  background: var(--white-smoke);
+  margin-top: 4.5rem;
+}
+
+/* create account section start here */
+
+.content {
+  padding: 5rem 0;
+}
+
+.content-box {
+  display: grid;
+  grid-template-columns: 1fr 21.8rem;
+}
+
+.sign-up-box {
+  color: var(--black);
+}
+
+.sign-up-box .sign-up-title,
+.sign-up-box .sign-up-btn-content {
+  text-align: center;
+}
+
+.sign-up-box .sign-up-desc {
+  margin-top: 2.5rem;
+}
+
+.sign-up-btn-content {
+  margin-top: 1rem;
+}
+
+.google-btn {
+  padding: 0.7rem 1.25rem;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+  background: var(--light-tomato);
+  border: 0;
+  color: var(--white);
+  border-radius: 0.18rem;
+  cursor: pointer;
+}
+
+.facebook-btn {
+  padding: 0.7rem 1.25rem;
+  text-transform: uppercase;
+  background: var(--navy-blue);
+  border: 0;
+  color: var(--white);
+  border-radius: 0.18rem;
+  cursor: pointer;
+}
+
+.sign-up-input-content {
+  margin: 4rem 0;
+}
+
+.sign-up-input-content input,
+select {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: var(--black);
+  outline: none;
+  border-radius: 0.188rem;
+  border: 0.063rem solid var(--light-gray);
+  margin: 0.62rem 0;
+}
+
+.create-website-btn {
+  padding: 0.813rem 1.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background: var(--ash);
+  color: var(--white);
+  border: 0;
+  border-radius: 0.188rem;
+}
+
+.supports-container {
+  padding: 0 1.87rem;
+}
+
+.question-content {
+  padding: 1.25rem;
+  background: var(--light-orange);
+  color: var(--white);
+  border-radius: 0.188rem;
+}
+
+.question-content h3 {
+  padding: 1.25rem 0;
+}
+
+.question-content p {
+  padding-bottom: 1.25rem;
+}
+
+.view-btn {
+  padding: 0.93rem 1.25rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--white);
+  border: 0;
+  border-radius: 0.188rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.view-btn:hover {
+  color: var(--black);
+  background: var(--white);
+  transition: 0.5s;
+}
+
+.support-content {
+  padding: 1.25rem;
+  margin-top: 1.56rem;
+  border: 0.125rem solid var(--ash);
+  border-radius: 0.188rem;
+}
+
+.support-content h3 {
+  padding: 1.25rem 0;
+}
+
+.support-content p {
+  padding-bottom: 1.25rem;
+}
+
+.chat-btn {
+  padding: 0.93rem 1.25rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: var(--black);
+  color: var(--white);
+  border: 0;
+  border-radius: 0.188rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.chat-btn:hover {
+  background: var(--light-orange);
+  transition: 0.5s;
+}
+
+/* create account section end here */
+
+/* footer section start here */
+
+.footer-inner-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.copyright-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.terms-condition-section {
+  text-align: right;
+}
+
+/* footer section end here */
+
+
+/* responsive for small screen and laptops */
+
+@media only screen and (max-width: 1025px) {
+  .nav-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-ul {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    position: fixed;
+    right: 0;
+    top: 4.5rem;
+    display: flex;
+    padding: 1rem 0;
+    flex-direction: column;
+    background: #fff;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: 0.5s ease-out;
+  }
+
+  .nav-li {
+    padding: 1rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .nav-li .user-icon {
+    display: none;
+  }
+
+  .active-drawer .nav-ul {
+    transform: translateX(0);
+  }
+
+  .active-drawer {
+    overflow-y: hidden;
+  }
+
+  .content-box {
+    grid-template-columns: 1fr;
+  }
+
+  .supports-container {
+    padding: 0;
+  }
+
+  .footer-inner-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* responsive for pads and tablets */
+
+@media only screen and (max-width: 769px) {
+
+  /* Footer section start here */
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .footer-content {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .copyright-section {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .copyright-content {
+    margin: 0.678rem 0;
+  }
+
+  /* Footer section end here */
+}

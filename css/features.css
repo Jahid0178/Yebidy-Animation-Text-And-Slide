@@ -1,0 +1,429 @@
+/* Raleway Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #333;
+  --dark-black: #000;
+  --orange: #FF6600;
+  --light-orange: #ff7a22;
+  --red: #DC3545;
+  --red-dark: #c82333;
+  --white: #fff;
+  --header-primary: 2rem;
+  --little-desc: 1.5rem;
+  --primary-font: 'Raleway',
+    sans-serif;
+  --light-green: #25d366;
+  --light-blue: #4267B2;
+  --light-sky: #55acee;
+  --light-gray: #7d7d7d;
+  --yellow: #ffbd00;
+  --tia-light-green: #95D03A;
+  --white-smoke: #f5f5f5;
+}
+
+
+body {
+  font-family: var(--primary-font);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--orange);
+  color: var(--white);
+}
+
+/* reuseable components start here */
+
+.container {
+  width: 100%;
+  max-width: 78rem;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.underline::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 0.12rem;
+  background: var(--black);
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.heading {
+  text-align: center;
+}
+
+/* reuseable component end here */
+
+img {
+  width: 100%;
+}
+
+
+.logo {
+  width: 10rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 333;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 10px 0px;
+}
+
+nav>.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-li {
+  display: inline-block;
+}
+
+.nav-link {
+  color: var(--black);
+  font-weight: 600;
+  text-decoration: none;
+
+  margin: 0 0.5rem;
+}
+
+.nav-link:hover {
+  color: var(--orange);
+  transition: 0.3s;
+}
+
+.user-link {
+  margin-left: 2rem;
+}
+
+.user-icon {
+  width: 0.87rem;
+  color: var(--orange);
+}
+
+/* humberger menu start here */
+
+.nav-menu {
+  display: none;
+}
+
+.nav-menu div {
+  width: 1.87rem;
+  height: 0.31rem;
+  background: #333;
+  margin: 0.31rem;
+  border-radius: 0.31rem;
+}
+
+/* humberger menu end here */
+
+
+
+.page-title {
+  padding: 3rem 0;
+  background: var(--white-smoke);
+  margin-top: 4.5rem;
+}
+
+/* feature card section start here */
+
+.features-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5rem 0;
+}
+
+.features-box {
+  padding: 0.93rem;
+}
+
+.features-img {
+  border-radius: 0.31rem;
+}
+
+.features-box h3 {
+  padding: 1rem 0;
+}
+
+.features-box p {
+  line-height: 1.3rem;
+}
+
+/* feature card section end here */
+
+/* module section start here */
+
+.easy-module-hader,
+.easy-module-title {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.module-img {
+  width: 37rem;
+}
+
+.module-content-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 6rem 0;
+}
+
+.module-box {
+  display: flex;
+}
+
+.module-number {
+  font-size: 3rem;
+  color: var(--orange);
+}
+
+.module-box-content {
+  margin: 0 1rem
+}
+
+.module-box-content h4 {
+  padding-bottom: 0.62rem;
+}
+
+/* module section end here */
+
+/* module available section start here */
+
+.module-available-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.circle-icon {
+  display: inline-block;
+  width: 1.5rem;
+}
+
+.module-available-container {
+  margin: 5rem 2rem;
+}
+
+.module-available-content {
+  margin: 0 1.25rem 1.25rem 0;
+}
+
+.module-available-inner-content {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.module-available-inner-content h3 {
+  display: inline-block;
+  margin-left: 0.62rem;
+}
+
+/* module available section end here */
+
+/* admin control panel section start here */
+
+.control-panel-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1rem;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.imac-container {
+  margin: auto;
+}
+
+.imac-content {
+  padding: 0 0 0 1.2rem;
+}
+
+.cp-desc-one,
+.cp-desc-two {
+  margin: 2rem 0;
+}
+
+/* admin control panel section end here */
+
+/* Try demo section start here */
+
+.try-demo-section {
+  padding: 3rem 0;
+  text-align: center;
+  background: var(--orange);
+}
+
+.demo-link {
+  color: var(--white);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.demo-link p {
+  padding-bottom: 1rem;
+}
+
+/* Try demo section end here */
+
+/* footer section start here */
+
+.footer-inner-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.copyright-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.terms-condition-section {
+  text-align: right;
+}
+
+/* footer section end here */
+
+/* reponsive for small screen and laptops */
+
+@media only screen and (max-width: 1025px) {
+  .nav-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-ul {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    position: fixed;
+    right: 0;
+    top: 4.5rem;
+    display: flex;
+    padding: 1rem 0;
+    flex-direction: column;
+    background: #fff;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: 0.5s ease-out;
+  }
+
+  .nav-li {
+    padding: 1rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .nav-li .user-icon {
+    display: none;
+  }
+
+  .active-drawer .nav-ul {
+    transform: translateX(0);
+  }
+
+  .active-drawer {
+    overflow-y: hidden;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  .service-container {
+    padding: 3rem 1rem;
+  }
+
+  .service-content {
+    flex-direction: column;
+  }
+
+  .service-img {
+    padding: 2rem 0;
+  }
+
+  .footer-inner-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* responsive for pads and tablets */
+
+@media only screen and (max-width: 769px) {
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .features-card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .module-content-box {
+    grid-template-columns: 1fr;
+  }
+
+  .module-box {
+    margin: 2rem 0;
+  }
+
+  .module-img {
+    width: 100%;
+  }
+
+  .module-available-container {
+    grid-template-columns: 1fr;
+  }
+
+  .module-available-content {
+    margin: 2rem 0;
+  }
+
+  .control-panel-container {
+    grid-template-columns: 1fr;
+  }
+
+  .control-panel-container h2 {
+    margin-top: 2rem;
+  }
+
+  /* Footer section start here */
+
+  .footer-content {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .copyright-section {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .copyright-content {
+    margin: 0.678rem 0;
+  }
+
+  /* Footer section end here */
+}
